@@ -1,0 +1,41 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background-color: var(#82a2fb);
+    background-image: radial-gradient(circle, #9cb5fa 40%, #618bff 70%);
+    width: 100vw;
+    height: 100vh;
+
+    .polygon {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.15);
+        clip-path: polygon(25% 65%, 75% 35%, 100% 50%, 100% 100%, 30% 100%);
+    }
+
+    .triangle {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+
+        &.triangle-1 {
+            clip-path: polygon(0 80%, 25% 100%, 0 100%);
+        }
+    
+        &.triangle-2 {
+            clip-path: polygon(0 100%, 40% 80%, 60% 100%);
+        }
+    
+        &.triangle-3 {
+            clip-path: polygon(0 100%, 100% 84%, 100% 100%);
+        }
+    
+        &.triangle-4 {
+            clip-path: polygon(75% 100%, 100% 25%, 100% 100%);
+        }
+    }
+}
